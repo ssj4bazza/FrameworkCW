@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TSM Managment System</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+  <%- include('../partials/navbar.ejs') %>
+  <%- include('../partials/jumbo.ejs') %>
+  <div id="vue_index_body">
+    <p>Index</p> 
+    <div class="row">
+        <div class="col-md-4">
+          <h2>Users</h2>
+          <p>Manage registered users</p>
+          <p><a class="btn btn-secondary" href="/user" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Files</h2>
+          <p>Deposite and withdraw files</p>
+          <p><a class="btn btn-secondary" href="/files" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Chat</h2>
+          <p>Chat with other users</p>
+          <p><a class="btn btn-secondary" href="/Sites" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          </div>
+        <div class="col-md-4">
+          <h2>Sites</h2>
+          <p>See info on all the different TSM sites</p>
+          <p><a class="btn btn-secondary" href="/files" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div> <!-- /container -->
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="hhttps://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/indexVue.js"></script>
+</body>
+</html>

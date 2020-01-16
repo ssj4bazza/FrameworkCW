@@ -1,0 +1,17 @@
+{
+  "name": "nodecw",
+  "version": "1.0.0",
+  "description": "Course work for frameworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Richard Baranowski",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mocha": "^7.0.0",
+    "mongoose": "^5.8.7"
+  }
+}
