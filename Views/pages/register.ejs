@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TSM Managment System</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+  <%- include('../partials/navbar.ejs') %>
+  <%- include('../partials/jumbo.ejs') %>
+    <div id="vue_register_form">
+        <div class="container register-container">
+            <form action="/register" method="POST">
+                <div class="row">
+                    <div class="col-md-6 login-form-1">
+                        <h3>Login</h3>
+                        <div class="form-group">
+                            <input type="text" name="firstname" class="form-control" placeholder="Firstname" value="" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="surname" class="form-control" placeholder="Surname" value="" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email" value="" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Your Password *" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btnSubmit" value="Register">Register</button>
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btnForgetPwd">Forget Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </form><!--/From----->
+            <a href="/login">Login</a>
+        </div> <!-- /container -->
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/indexVue.js"></script>
+</body>
+</html>
