@@ -5,6 +5,9 @@ const mongoose = require('mongoose');
 var app = express();
 const bcrypt = require('bcrypt');
 
+//models
+user = require("./models/user")
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
@@ -62,11 +65,16 @@ app.get('/register', function(req, res) {
 app.post('/register', async function(req, res) {
     try{
         const hashedPasswword = await bcrypt.hash(req.body.password, 10)
-        console.log(hashedPasswword);
+        user.create({
+            firstName: req.body.firstname,
+            Surname: req.body.surname,
+            password: hashedPasswword,
+            email: req.body.email
+        })
         res.redirect('/login')
     }catch{
         res.redirect('/register')
-    }
+    } 
     console.log('errr')
 });
 /*------------------------------------------*/
