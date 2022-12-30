@@ -13,7 +13,7 @@
     "bcrypt": "^3.0.7",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "mocha": "^7.0.0",
+    "mocha": "^10.2.0",
     "mongoose": "^5.8.7"
   },
   "devDependencies": {
